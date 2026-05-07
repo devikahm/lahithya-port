@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Lahitya B K</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .about-text h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: var(--text-light);
+        }
+
+        .skills-section {
+            margin-top: 40px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            padding: 20px;
+            background: var(--bg-alt);
+            border-radius: 15px;
+            text-align: center;
+            transition: var(--transition);
+            border-bottom: 4px solid var(--secondary);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+        }
+
+        .skill-card h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            padding: 30px;
+            background: var(--glass);
+            border-radius: 20px;
+            border-left: 5px solid var(--primary);
+        }
+
+        .contact-info h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">LAHITYA</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="about-grid reveal">
+                <div class="about-text">
+                    <h1>About Me</h1>
+                    <p>
+                        I am currently a Bachelor of Computer Application (BCA) student at Tumkur University. 
+                        I consider myself a responsible and orderly person with a strong drive to learn and excel in the tech industry.
+                    </p>
+                    <p>
+                        My journey in computer applications has equipped me with foundational knowledge in various programming languages and database management. 
+                        I am now looking forward to my first professional work experience where I can apply my skills and grow as a developer.
+                    </p>
+                    
+                    <div class="skills-section">
+                        <h2 style="margin-bottom: 20px; color: var(--primary);">Computer Skills</h2>
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <h3>Java</h3>
+                                <p>Core Programming</p>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Python</h3>
+                                <p>Scripting & Logic</p>
+                            </div>
+                            <div class="skill-card">
+                                <h3>Database</h3>
+                                <p>SQL & Management</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-details">
+                    <div class="contact-info">
+                        <h3>Connect With Me</h3>
+                        <div class="contact-item">
+                            <span>📧</span>
+                            <a href="mailto:lahithya8009@gmail.com">lahithya8009@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>📞</span>
+                            <a href="tel:7019727938">7019727938</a>
+                        </div>
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <span>Tiptur Tumkur (D), Karnataka</span>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px; padding: 30px; background: var(--secondary); color: white; border-radius: 20px;">
+                        <h3 style="margin-bottom: 10px;">Languages</h3>
+                        <ul style="list-style: disc; margin-left: 20px;">
+                            <li>English</li>
+                            <li>Kannada</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 40px 10%; text-align: center; background: var(--bg-alt);">
+        <p>&copy; 2026 Lahitya B K. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

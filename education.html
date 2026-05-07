@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Lahitya B K</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .education-timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .education-timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--secondary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: var(--bg);
+            border: 4px solid var(--primary);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .right::after {
+            left: -16px;
+        }
+
+        .content {
+            padding: 20px 30px;
+            background-color: var(--bg-alt);
+            position: relative;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .content:hover {
+            transform: scale(1.02);
+            background: var(--glass);
+        }
+
+        .content h3 {
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .content h4 {
+            color: var(--text-light);
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .content .date {
+            font-weight: 800;
+            color: var(--secondary);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        @media screen and (max-width: 600px) {
+            .education-timeline::after {
+                left: 31px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-item::after {
+                left: 15px;
+            }
+            .right {
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">LAHITYA</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html" class="active">Education</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h1 style="text-align: center; margin-bottom: 50px; color: var(--primary);">Educational Journey</h1>
+            
+            <div class="education-timeline reveal">
+                <div class="timeline-item left">
+                    <div class="content">
+                        <span class="date">2023 - 2026</span>
+                        <h3>Government First Grade College</h3>
+                        <h4>Pursuing Education</h4>
+                        <p>Focusing on foundational computer application concepts and academic excellence.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item right">
+                    <div class="content">
+                        <span class="date">Current</span>
+                        <h3>Tumkur University</h3>
+                        <h4>Bachelor of Computer Application (BCA)</h4>
+                        <p>Specializing in computer programming, database management, and software systems.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="content">
+                        <span class="date">Recent Experience</span>
+                        <h3>Project Intern</h3>
+                        <h4>Akshetra Tech Solutions Private Limited</h4>
+                        <p>Gaining hands-on experience in real-world technology solutions and project management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 40px 10%; text-align: center; background: var(--bg-alt);">
+        <p>&copy; 2026 Lahitya B K. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

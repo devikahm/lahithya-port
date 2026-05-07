@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lahitya B K | Portfolio</title>
+    <meta name="description" content="Professional portfolio of Lahitya B K - Student and Aspiring Computer Professional.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .hero-content {
+            flex: 1;
+            animation: slideInLeft 1s ease;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            animation: slideInRight 1s ease;
+        }
+
+        .image-container {
+            position: relative;
+            width: 350px;
+            height: 450px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-container::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+            border: 5px solid var(--secondary);
+            border-radius: 20px;
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            color: var(--text-light);
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 20px;
+        }
+
+        @media (max-width: 968px) {
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            .hero h1 {
+                font-size: 3rem;
+            }
+            .hero-btns {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">LAHITYA</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <br><span>Lahitya B K</span></h1>
+                <h2>Student & Aspiring Computer Professional</h2>
+                <p style="margin-bottom: 30px; max-width: 600px;">
+                    Driven by a passion for technology and a focus on building efficient solutions. 
+                    I'm a Bachelor of Computer Application student currently exploring the world of software development.
+                </p>
+                <div class="hero-btns">
+                    <a href="projects.html" class="btn btn-primary">View Projects</a>
+                    <a href="assets/resume.jpg" target="_blank" class="btn btn-outline">Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="assets/profile.jpg" alt="Lahitya B K">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 40px 10%; text-align: center; background: var(--bg-alt);">
+        <p>&copy; 2026 Lahitya B K. All Rights Reserved.</p>
+        <div style="margin-top: 20px;">
+            <a href="mailto:lahithya8009@gmail.com" style="margin: 0 15px; color: var(--primary);">Email</a>
+            <a href="tel:7019727938" style="margin: 0 15px; color: var(--primary);">Phone</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications | Lahitya B K</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .cert-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            border: 1px solid var(--bg-alt);
+            transition: var(--transition);
+        }
+
+        .cert-card:hover {
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+
+        .cert-icon {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .cert-card h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .cert-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .view-cert {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 100px 20px;
+            background: var(--bg-alt);
+            border-radius: 30px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">LAHITYA</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="certifications.html" class="active">Certifications</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div style="text-align: center;">
+                <h1 style="color: var(--primary); font-size: 3rem;">Certifications</h1>
+                <p style="color: var(--text-light);">Showcasing my continuous learning and professional development.</p>
+            </div>
+
+            <div class="cert-grid reveal">
+                <!-- Certificate 1 -->
+                <div class="cert-card">
+                    <div class="cert-icon">🏆</div>
+                    <h3>Java Programming Masterclass</h3>
+                    <p>Issued by: Online Platform (Placeholder)</p>
+                    <span class="view-cert">View Certificate</span>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="cert-card">
+                    <div class="cert-icon">📜</div>
+                    <h3>Python for Data Science</h3>
+                    <p>Issued by: Educational Institute (Placeholder)</p>
+                    <span class="view-cert">View Certificate</span>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>Database Management Essentials</h3>
+                    <p>Issued by: University Certification (Placeholder)</p>
+                    <span class="view-cert">View Certificate</span>
+                </div>
+            </div>
+
+            <div class="empty-state reveal" style="margin-top: 80px;">
+                <h2>More Coming Soon!</h2>
+                <p>I am actively working on new certifications to enhance my professional profile.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer style="padding: 40px 10%; text-align: center; background: var(--bg-alt);">
+        <p>&copy; 2026 Lahitya B K. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
